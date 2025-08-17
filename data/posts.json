@@ -1,0 +1,142 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Getting Started with Node.js",
+      "content": "Node.js is a runtime environment that allows you to run JavaScript on the server side...",
+      "author": "Moo Dev",
+      "tags": [
+        "nodejs",
+        "backend",
+        "javascript"
+      ],
+      "createdAt": "2025-08-16T12:00:00Z",
+      "updatedAt": "2025-08-16T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Understanding Express.js Middleware",
+      "content": "Middleware functions in Express are functions that have access to the request and response objects...",
+      "author": "Jane Smith",
+      "tags": [
+        "express",
+        "middleware",
+        "nodejs"
+      ],
+      "createdAt": "2025-08-16T13:00:00Z",
+      "updatedAt": "2025-08-16T13:00:00Z"
+    },
+    {
+      "id": "3",
+      "title": "REST APIs Best Practices",
+      "content": "When designing REST APIs, it is important to follow best practices like proper naming conventions...",
+      "author": "John Doe",
+      "tags": [
+        "api",
+        "rest",
+        "best practices"
+      ],
+      "createdAt": "2025-08-16T14:00:00Z",
+      "updatedAt": "2025-08-16T14:00:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Introduction to MongoDB",
+      "content": "MongoDB is a NoSQL database that stores data in flexible, JSON-like documents...",
+      "author": "Moo Dev",
+      "tags": [
+        "mongodb",
+        "database",
+        "nosql"
+      ],
+      "createdAt": "2025-08-16T15:00:00Z",
+      "updatedAt": "2025-08-16T15:00:00Z"
+    },
+    {
+      "id": "5",
+      "title": "Using Async/Await in JavaScript",
+      "content": "Async/Await makes it easier to work with asynchronous operations in JavaScript...",
+      "author": "Alice Johnson",
+      "tags": [
+        "javascript",
+        "async",
+        "programming"
+      ],
+      "createdAt": "2025-08-16T16:00:00Z",
+      "updatedAt": "2025-08-16T16:00:00Z"
+    },
+    {
+      "id": "6",
+      "title": "Error Handling in Node.js",
+      "content": "Proper error handling ensures your Node.js applications are robust and stable...",
+      "author": "Bob Lee",
+      "tags": [
+        "nodejs",
+        "error handling",
+        "backend"
+      ],
+      "createdAt": "2025-08-16T17:00:00Z",
+      "updatedAt": "2025-08-16T17:00:00Z"
+    },
+    {
+      "id": "7",
+      "title": "Introduction to RESTful Services",
+      "content": "RESTful services provide a standard way for clients and servers to communicate...",
+      "author": "Moo Dev",
+      "tags": [
+        "rest",
+        "api",
+        "web services"
+      ],
+      "createdAt": "2025-08-16T18:00:00Z",
+      "updatedAt": "2025-08-16T18:00:00Z"
+    },
+    {
+      "id": "8",
+      "title": "Deploying Node.js Apps to Heroku",
+      "content": "Heroku is a cloud platform that makes it easy to deploy Node.js applications...",
+      "author": "Jane Smith",
+      "tags": [
+        "deployment",
+        "heroku",
+        "nodejs"
+      ],
+      "createdAt": "2025-08-16T19:00:00Z",
+      "updatedAt": "2025-08-16T19:00:00Z"
+    },
+    {
+      "id": "9",
+      "title": "Securing Express Applications",
+      "content": "Security is essential for web applications. Learn to implement authentication and authorization...",
+      "author": "John Doe",
+      "tags": [
+        "security",
+        "express",
+        "authentication"
+      ],
+      "createdAt": "2025-08-16T20:00:00Z",
+      "updatedAt": "2025-08-16T20:00:00Z"
+    },
+    {
+      "id": "10",
+      "title": "Understanding JSON Web Tokens",
+      "content": "JWTs are a compact, URL-safe way of representing claims between two parties...",
+      "author": "Alice Johnson",
+      "tags": [
+        "jwt",
+        "authentication",
+        "security"
+      ],
+      "createdAt": "2025-08-16T21:00:00Z",
+      "updatedAt": "2025-08-16T21:00:00Z"
+    },
+    {
+      "id": 11,
+      "title": "test title",
+      "content": "test content",
+      "author": "test author",
+      "createdAt": "2025-08-17T14:44:33.873Z",
+      "updatedAt": "2025-08-17T14:44:33.873Z"
+    }
+  ]
+}

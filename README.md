@@ -28,8 +28,8 @@ By default, the server runs on http://localhost:5000.
 
 | Method | Endpoint               | Description            |
 |--------|------------------------|------------------------|
-| GET    | `/api/articles`        | Get all articles       |
-| GET    | `/api/articles/:id`    | Get an article by ID   |
-| POST   | `/api/articles`        | Create a new article   |
-| PUT    | `/api/articles/:id`    | Update an article by ID|
-| DELETE | `/api/articles/:id`    | Delete an article by ID|
+| GET    | `/api/posts`        | Get all articles       |
+| GET    | `/api/posts/:id`    | Get an article by ID   |
+| POST   | `/api/posts`        | Create a new article   |
+| PUT    | `/api/posts/:id`    | Update an article by ID|
+| DELETE | `/api/posts/:id`    | Delete an article by ID|
