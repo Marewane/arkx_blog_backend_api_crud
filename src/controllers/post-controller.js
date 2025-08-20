@@ -7,9 +7,9 @@ async function listPosts(req, res, next) {
   try {
     // Extract query params
     const page = parseInt(req.query.page) || 1;
-    const limit = parseInt(req.query.limit) || 3;
-    const sort = req.query.sort || 'createdAt';
-    const order = req.query.order || 'desc';
+    const limit = parseInt(req.query.limit) || 10;
+    const sort = req.query.sort || 'createdAt'; // choose to sort based on what ? createdAt here is default if user does not enter anything
+    const order = req.query.order || 'desc'; // default it will be from the last to the old
     const q = req.query.q ? req.query.q.trim() : undefined; // ← pass as-is
 
     //  Use the query function — it handles search, sort, paginate
@@ -112,7 +112,10 @@ async function deletePost(req, res, next) {
     error.status = 404;
     return next(error);
   }
-  res.status(204).send(); // 204 No Content
+  res.status(204).json({
+    error:null,
+    message:"the post has been deleted successfully"
+  }); // 204 No Content
 }
 
 module.exports = {

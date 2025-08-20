@@ -106,6 +106,7 @@ function validatePostUpdate(body) {
     } else if (value.tags.length > 20) {
       details.tags = 'Tags cannot exceed 20 items';
     } else {
+      // checking values of tags array here
       const invalidTag = value.tags.some(tag => 
         typeof tag !== 'string' || tag.trim() === ''
       );

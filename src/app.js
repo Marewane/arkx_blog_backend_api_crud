@@ -1,3 +1,4 @@
+// src/app.js
 const express = require('express');
 const app = express();
 const port = 5000;
@@ -6,26 +7,30 @@ const articleRouter = require('./routes/post-routes');
 const errorHandlerMiddleware = require('./middleware/error-handler');
 const notFoundMiddleware = require('./middleware/not-found');
 const loggingMiddleware = require('./middleware/request-logger');
-
-// global middleware
-app.use(express.json());
-app.use(cors());
-
-// this is for logging info for each request
-loggingMiddleware(app);
+const connectDB = require('./config/db');
 
 
+// Connect to DB first
+async function startServer() {
+  await connectDB();
 
+  app.use(express.json());
+  app.use(cors());
 
-// This is for routes
-app.use('/api',articleRouter);
+  // this is middleware for logging infos about each reaquest
+  loggingMiddleware(app);
 
-// not found middleware 
-notFoundMiddleware(app);
+  // use routes
+  app.use('/api', articleRouter); 
 
-// error handling middleware
-errorHandlerMiddleware(app);
+  // this is middleware for handling non route exists
+  notFoundMiddleware(app);
+  // this is middleware for handling errors
+  errorHandlerMiddleware(app);
 
-app.listen(port,()=>{
-    console.log('server has been successfully connect on port 5000');
-});
+  app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
+  });
+}
+
+startServer().catch(console.error);
